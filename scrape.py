@@ -43,8 +43,6 @@ while (isHaveNextPage):
     if soup.find("a",class_='pagination__link--next') is None:
         isHaveNextPage=False
 
-
-
 # Write the info in csv file
 apartment_df = pd.DataFrame(apartment_list)
 apartment_df.to_csv("housing1.csv", encoding='utf-8')
